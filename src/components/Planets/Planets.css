@@ -1,0 +1,42 @@
+#loading{
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+}
+.container{
+   padding: 3% 0%;
+
+}
+
+.heading{
+    text-align: center;
+    color: yellow;
+    margin-bottom: 5% ;
+}
+.planet-container{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+.test{
+    height: 200px;
+    width : 190px;
+    border-radius: 30%;
+}
+
+.btn2{
+    width: 290px;
+    height: 40px;
+    background-color: red;
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+.btn2:hover{
+    color: yellow;
+    cursor: pointer;
+    border: 1px solid white;
+}

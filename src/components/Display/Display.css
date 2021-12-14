@@ -1,0 +1,60 @@
+.reset{
+    font-size: 12px;
+    text-decoration: none;
+    color : white
+}
+.reset:hover{
+    cursor: pointer;
+}
+
+.list-item{
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+}
+.vehicle-list{
+    list-style-type: none;
+}
+.display-container{
+    width: 100%;
+
+}
+.container h3{
+    text-align: center;
+    color: yellow;
+}
+@media(min-width : 320px) and (max-width : 720px){
+.d-flex{
+    flex-wrap: wrap;
+}
+}
+
+.image{
+    width: 80%;
+    height: 230px;
+    border-radius: 30%;
+    margin : 2% 14%;
+}
+.vehicle-list li {
+    margin: 5% 0 5% 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+    justify-items: left;
+    align-items: left;
+    transition: all .2s ease;
+}
+
+.vehicle-list li:hover{
+    cursor: pointer;
+    color: violet;
+}
+
+.range-container{
+    background-color: black;
+    color: red;
+    font-size: 14px;
+    width:25%;
+    padding: 5px;
+}
