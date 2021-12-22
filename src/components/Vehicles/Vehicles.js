@@ -68,7 +68,7 @@ class Vehicles extends React.Component{
                       })
                 }
                 this.setState({finalSelection , vehicles})
-                console.log(this.state.finalSelection);
+                // console.log(this.state.finalSelection);
 
             }else{
                 this.setFailureStyle(e);
@@ -78,19 +78,19 @@ class Vehicles extends React.Component{
     }
 
     showWarning(e){
-        console.log("warning u mf!!!")
+        alert("Please choose vehicle according to the distance!")
     }
 
     setSuccessStyle(e){
-        console.log("success mf!")
+        // console.log("success mf!")
         e.target.style['box-shadow'] = "3px 3px 11px 1px #afa";
         e.target.style['border-radius'] = '8px';
         e.target.style['color'] = 'violet';
     }
 
     setFailureStyle(e){
-        console.log("failure mf!!!")
-        // e.target.style['box-shadow'] = "3px 3px #d21";
+        // console.log("failure mf!!!")
+        e.target.style['box-shadow'] = "3px 3px #d21";
 
     }
 
@@ -135,7 +135,7 @@ class Vehicles extends React.Component{
             {planets}
             </div>
             {this.state.showRange === true && Object.keys(this.state.finalSelection).length !== 4 ? (<div className="range-container"><p>Can go {this.state.range} mega miles.</p></div>):null}
-            {Object.keys(this.state.finalSelection).length === 4 ? <Link to={{pathname : "/result" ,state: [this.state.finalSelection, this.state.totalTime]}}><button className="btn2">Find Falcone!</button></Link> : null}
+            {Object.keys(this.state.finalSelection).length === 4 ? <Link id='nav2' to={{pathname : "/result" ,state: [this.state.finalSelection, this.state.totalTime]}}><button className="btn2 btn3">Find Falcone!</button></Link> : null}
             </div>
         )
     }

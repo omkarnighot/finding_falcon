@@ -33,7 +33,8 @@
     color: gold;
     font-family: 'Press Start 2P', cursive;
     margin-top: 3%;
-    margin-left: 40%;
+    /* margin-left: 40%; */
+    /* margin:  0 auto ; */
 }
 .btn2:hover{
     color: yellow;

@@ -26,7 +26,7 @@ class Planets extends React.Component{
             this.setState({
                 selectedPlanets : selectedPlanets
             })
-            console.log(selectedPlanets)
+            // console.log(selectedPlanets)
         }
         else{
             e.target.style['opacity'] = 1;
@@ -36,7 +36,7 @@ class Planets extends React.Component{
             this.setState({
                 selectedPlanets : selectedPlanets
             })
-            console.log(selectedPlanets);
+            // console.log(selectedPlanets);
         }
 
     }
@@ -73,7 +73,7 @@ class Planets extends React.Component{
                     {!this.state.planets.length ? <img id="loading" src={LOADING_GIF} alt="...loading..."></img>:planets}
                 </div>
                 <div>
-                    {this.state.selectedPlanets.length === 4 ? (<Link id='nav2' to={{pathname : '/vehicles',state : this.state.selectedPlanets }}><button className="btn2">Let's search!</button></Link>): this.state.selectedPlanets.length>4? (<p>You can search only 4 Planets</p>) : null}
+                    {this.state.selectedPlanets.length === 4 ? (<Link id='nav2' to={{pathname : '/vehicles',state : this.state.selectedPlanets }}><button className="btn2 btn3">Let's search!</button></Link>): this.state.selectedPlanets.length>4? (<p>You can search only 4 Planets</p>) : null}
                 </div>
             </div>
 

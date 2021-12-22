@@ -13,7 +13,7 @@ class Display extends React.Component{
     render(){
         // console.log(this.props.planet)
         let vehiclesList = this.props.vehicles.map((vehicle,index)=>{
-        return <li className="list-item m-2" onClick={(e)=>this.props.mouseClick(index,e)} onMouseEnter={(e)=>this.props.mouseEnter(index,e)} onMouseLeave={(e)=>this.props.mouseLeave(index,e)}> {vehicle.name}-{vehicle.total_no}</li>
+        return <li key={index}className="list-item m-2" onClick={(e)=>this.props.mouseClick(index,e)} onMouseEnter={(e)=>this.props.mouseEnter(index,e)} onMouseLeave={(e)=>this.props.mouseLeave(index,e)}> {vehicle.name}-{vehicle.total_no}</li>
         })
         return (
             <div className="col-6 display-container  mb-2">
